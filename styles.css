@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(207, 207, 207);
+    padding: 0px 5px;
+}
+p,h3{
+    font-size: 12px;
+    color: #a7a5a5;
+    font-weight: 600;
+}
+.container{
+    width: 30rem;
+    height: auto;
+    background: #f1f0f0;
+    padding: 20px 30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+
+    .card-container {
+        margin-top: -120px;
+        margin-bottom: 30px;
+        background: linear-gradient(45deg, rgb(110, 57, 110), rgb(58, 21, 58), rgb(192, 74, 192), rgb(36, 5, 36));
+        border-radius: 1rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.35);
+        width: 98%;
+        height: 13rem;
+        padding: 20px 20px;
+
+        .chips-card-logo{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .chip-container{
+                width: 70px;
+                height: 35px;
+
+                .chips-logo{
+                    width: 55px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .card-container{
+        .card-type-container{
+            width: 70px;
+            height: 30px;
+
+            .card-type{
+                width: 70px;
+                height: 22px;
+                filter: invert(80%);
+            }
+        }
+    }
+}
+.card-number-display{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    margin: 40px 0px;
+}
+.card-holder-expire-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-holder-row p{
+     margin: 4px 0px;   
+}
+.epire-date-container p{
+    margin: 4px 0px;  
+}
+.inputs-row{
+    width: 100%;
+    padding: 0px 25px;
+
+    .form{
+        width: 100%;
+
+        .card-numbers{
+           width: 100%;
+           margin-bottom: 20px;
+        }
+    }
+}
+.card-numbers>h3{
+    margin-bottom: 3px;
+}
+
+
+.number-inputs-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number-inputs-space input{
+    width: 83px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0px 10px;
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border: 1.5px solid rgb(184, 182, 182);
+}
+.inputs-space2{
+    width: 100%;
+}
+.inputs-space2 input{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0px 10px;
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    color: rgb(161, 161, 161);
+    border: 1.5px solid rgb(184, 182, 182);
+}
+.date-cvv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.expire-date{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.month-year h3{
+    margin-bottom: 3px;
+}
+.cvv-input input{
+    width: 80px;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    padding: 0px 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    color: rgb(161, 161, 161);
+    border: 1.5px solid rgb(161, 161, 161);
+}
+#select-month, #select-year{
+    width: 80px;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    color: rgb(161, 161, 161);
+    padding: 0px 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border: 1.5px solid rgb(161, 161, 161);
+}
+button{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, rgb(110, 57, 110), rgb(58, 21, 58), rgb(192, 74, 192), rgb(36, 5, 36));
+}
+@media(max-width:500px){
+    .container{
+        max-width: 500px;
+    }
+    .number-inputs-space input{
+        width: 70px;
+        height: 40px;
+        border-radius: 5px;
+        outline: none;
+        color: rgb(161, 161, 161);
+        border: 1.5px solid rgb(161, 161, 161);
+    }
+    #select-month, #select-year{
+        width: 70px;
+    }
+}
