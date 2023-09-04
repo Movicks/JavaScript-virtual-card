@@ -5,8 +5,14 @@
     box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 body{
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
