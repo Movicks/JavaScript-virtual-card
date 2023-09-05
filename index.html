@@ -16,42 +16,59 @@
             <img src="Icons/chip (1).png" alt="chips" class="chips-logo"/>
           </div>
           <div class="card-type-container">
-            <img src="Icons/visa.png" alt="visa" class="card-type"/>
+            <img src="Icons/visa2.png" alt="" class="card-type" id="cardLogo"/>
           </div>
         </div>
         <div class="card-number-display">
-          <p>1222</p>
-          <p>3333</p>
-          <p>5555</p>
-          <p>7777</p>
+          <p id="cardNumDisplay"></p>
+          <p id="cardNumDisplay2"></p>
+          <p id="cardNumDisplay3"></p>
+          <p id="cardNumDisplay4"></p>
         </div>
         <div class="card-holder-expire-container">
           <div class="card-holder-row">
             <p class="holder-name">card holder</p>
-            <p class="name-display">Movicx</p>
+            <div class="Holder-contain">
+              <p class="name-display" id="name-display"></p>
+            </div>  
           </div>
           <div class="epire-date-container">
             <p class="epire-title">expires</p>
-            <p class="epire-month-year">12/30</p>
+            <div class="expire-day-container">
+              <p class="epire-month-year" id="month"></p>
+              <span id="year"></span>
+            </div>
           </div>
         </div>
       </div>
+      <div class="back-container">
+        <div class="stripe"></div>
+        <div class="box">
+          <span class="cvv-span">cvv</span>
+          <div class="cvv-box">
+            <p></p>
+            <p class="cvv-box2"></p>
+          </div>
+          <!-- <img src="" alt="cvv" srcset=""> -->
+        </div>
+      </div>
     </div>
+    
     <div class="inputs-row">
       <form action="" class="form">
          <div class="card-numbers">
           <h3>card number</h3>
           <div class="number-inputs-space">
-            <input type="text"/>
-            <input type="text"/>
-            <input type="text"/>
-            <input type="text"/>
+            <input type="text" id="card-nums1" class="digits-input" maxlength="4" autofocus/>
+            <input type="text" id="card-nums2" class="digits-input" maxlength="4"/>
+            <input type="text" id="card-nums3" class="digits-input" maxlength="4"/>
+            <input type="text" id="card-nums4" class="digits-input" maxlength="4"/>
           </div>
          </div>
          <div class="card-numbers">
           <h3>card holder</h3>
           <div class="inputs-space2">
-            <input type="text"/>
+            <input type="text" id="cardHolder-inputs"/>
           </div>
          </div>
          <div class="date-cvv">
@@ -92,7 +109,7 @@
             <div class="cvv-container">
               <h3>cvv</h3>
               <div class="cvv-input">
-                <input type="text"/>
+                <input type="text" class="Cvv-back" maxlength="3"/>
               </div>
             </div>
           </div>
@@ -103,5 +120,6 @@
   </div>  
   
   <script src="index.js"></script>
+  <script src="logoChanger.js"></script>
 </body>
 </html>
