@@ -3,7 +3,7 @@
    const userInput = document.getElementById('card-nums1');
 
    // Initial logo path
-   let currentLogo = 'Icons/visa.png';
+   let currentLogo = 'Icons/visa2.png';
 
   // Function to change the logo based on the first digit
   function changeLogo() {
