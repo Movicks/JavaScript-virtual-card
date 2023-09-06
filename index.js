@@ -24,7 +24,7 @@ textInput2.addEventListener('input', function () {
   // Gets the current value of the input
   const inputValue2 = textInput2.value;
 
-  // Update the content of the display div with the inputted value
+
   displayDiv2.textContent = inputValue2;
 });
 
@@ -32,7 +32,7 @@ textInput3.addEventListener('input', function () {
   // Gets the current value of the input
   const inputValue3 = textInput3.value;
 
-  // Update the content of the display div with the inputted value
+
   displayDiv3.textContent = inputValue3;
 });
 
@@ -40,7 +40,6 @@ textInput4.addEventListener('input', function () {
   // Gets the current value of the input
   const inputValue4 = textInput4.value;
 
-  // Update the content of the display div with the inputted value
   displayDiv4.textContent = inputValue4;
 });
 
@@ -72,7 +71,7 @@ cardHolderInputs.addEventListener('input', function () {
     // current value of the input field
     const CardHolderName = cardHolderInputs.value;
 
-    // Update the content of the card holder name field with the inputted value
+    // Updates the content of the card holder name field with the inputted value
     Holder.textContent = CardHolderName;
 });
 
@@ -97,3 +96,5 @@ document.querySelector('.Cvv-back').onmouseleave = () =>{
   document.querySelector('.front-card-row').style.transform = "perspective(1000px) rotateY(0deg)";
   document.querySelector('.back-container').style.transform = "perspective(1000px) rotateY(180deg)";
 }
+
+
