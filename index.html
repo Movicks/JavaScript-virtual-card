@@ -49,26 +49,26 @@
             <p></p>
             <p class="cvv-box2"></p>
           </div>
-          <!-- <img src="" alt="cvv" srcset=""> -->
         </div>
       </div>
     </div>
     
     <div class="inputs-row">
-      <form action="" class="form">
+      <p id="validationMessage"></p>
+      <form class="form" onsubmit="return validateFormAndSubmit()">
          <div class="card-numbers">
           <h3>card number</h3>
           <div class="number-inputs-space">
-            <input type="text" id="card-nums1" class="digits-input" maxlength="4" autofocus/>
-            <input type="text" id="card-nums2" class="digits-input" maxlength="4"/>
-            <input type="text" id="card-nums3" class="digits-input" maxlength="4"/>
-            <input type="text" id="card-nums4" class="digits-input" maxlength="4"/>
+            <input type="text" id="card-nums1" class="digits-input" maxlength="4" autofocus oninput="validateNumberInput(this)"/>
+            <input type="text" id="card-nums2" class="digits-input" maxlength="4" oninput="validateNumberInput(this)"/>
+            <input type="text" id="card-nums3" class="digits-input" maxlength="4" oninput="validateNumberInput(this)"/>
+            <input type="text" id="card-nums4" class="digits-input" maxlength="4" oninput="validateNumberInput(this)"/>
           </div>
          </div>
          <div class="card-numbers">
           <h3>card holder</h3>
           <div class="inputs-space2">
-            <input type="text" id="cardHolder-inputs"/>
+            <input type="text" id="cardHolder-inputs" oninput="validateLetterInput(this)" pattern="[A-Za-z ]+"/>
           </div>
          </div>
          <div class="date-cvv">
@@ -109,17 +109,20 @@
             <div class="cvv-container">
               <h3>cvv</h3>
               <div class="cvv-input">
-                <input type="text" class="Cvv-back" maxlength="3"/>
+                <input type="text" class="Cvv-back" maxlength="3" id="Cvv-inputs-mm"/>
               </div>
             </div>
           </div>
          </div>
          <button type="submit">submit</button>
       </form>
+      <!-- <span id="errorMessage" class="error-message"></span> -->
+      <div id="result"></div>
     </div>
   </div>  
   
   <script src="index.js"></script>
+  <script src="formValidate.js"></script>
   <script src="logoChanger.js"></script>
 </body>
 </html>
